@@ -1,7 +1,4 @@
-﻿/* Ler os dados de um trabalhador com N contratos (N fornecido pelo usuário). Depois, solicitar
-do usuário um mês e mostrar qual foi o salário do funcionário nesse mês*/
-
-using Exercicio_POO_13_Enum_Composicao.Entities;
+﻿using Exercicio_POO_13_Enum_Composicao.Entities;
 using Exercicio_POO_13_Enum_Composicao.Entities.Enums;
 using System.Globalization;
 
@@ -44,9 +41,8 @@ public class Program
         int mounth = int.Parse(mouthAndYear.Substring(0, 2));
         int year = int.Parse(mouthAndYear.Substring(3));
 
-        Console.Write("Name: " + worker.Name);
-        Console.Write("Department: " + worker.Department.Name);
-        Console.Write("Income for " + mouthAndYear + ": " + worker.Income(year, mounth));
-
+        Console.WriteLine("Name: " + worker.Name);
+        Console.WriteLine("Department: " + worker.Department.Name);
+        Console.WriteLine("Income for " + mouthAndYear + " : " + worker.Income(year, mounth));
     }
 }
